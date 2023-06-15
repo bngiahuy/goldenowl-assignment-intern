@@ -18,3 +18,5 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
+
+Link deploy netlify: [https://648b371fe2a4bd1d641a4ce7--melodious-melomakarona-e98f0a.netlify.app/]
