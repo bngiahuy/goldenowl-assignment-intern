@@ -27,7 +27,7 @@ function List() {
     <div>
       {ListData.shoes.map((item) => {
         return (
-          <div className="item">
+          <div className="item" key={item.name + item.id}>
             <div className="item_img">
               <img src={item.image} alt="" />
             </div>

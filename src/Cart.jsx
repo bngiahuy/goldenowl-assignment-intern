@@ -17,7 +17,7 @@ function Cart() {
     <>
       {items.map((item) => {
         return (
-          <div>
+          <div key={item.name + item.id}>
             <div className="Cart_item">
               <div className="Cart_itemLeft">
                 <div
