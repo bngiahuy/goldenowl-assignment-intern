@@ -92,3 +92,14 @@
 .App_body::-webkit-scrollbar {
   display: none;
 }
+
+@media screen and (max-width: 768px) {
+  .App {
+    justify-content: center;
+  }
+
+  .App_content {
+    width: 100%;
+    max-width: 360px;
+  }
+}
