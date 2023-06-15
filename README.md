@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Npm version: 9.5.1
+
 ## Available Scripts
 
 In the project directory, when you first start the project, you should run:
