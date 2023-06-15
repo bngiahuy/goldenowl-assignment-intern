@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import List from "./List";
+import Cart from "./Cart";
+import logo from "./assets/nike.png";
+import { useCart } from "react-use-cart";
 function App() {
+  const { cartTotal } = useCart();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Card Left */}
+      <div className="App_content">
+        <div className="App_top">
+          <img src={logo} alt="" className="App_top_logo" />
+        </div>
+        <div className="App_title">Our Products</div>
+        <div className="App_body">
+          <List />
+        </div>
+      </div>
+
+      {/* Card Right */}
+      <div className="App_content">
+        <div className="App_top">
+          <img src={logo} alt="" className="App_top_logo" />
+        </div>
+        <div className="App_title">
+          Your cart
+          <span className="App_title_amount" style={{ float: "right" }}>
+            ${cartTotal.toFixed(2)}
+          </span>
+        </div>
+        <div className="App_body">
+          <Cart />
+        </div>
+      </div>
     </div>
   );
 }
